@@ -1,7 +1,7 @@
 Era Muha
 =================================================================================================================================
 
-Dev & Data | Building Innovation with Code, AI, Human Logic, Heart & Soul
+Dev | Data | AI | Business | Building Innovation with Code, AI, Human Logic, Heart & Soul
 ------------------------------------------------------------
 
 * 🌍  I'm based in Milano
