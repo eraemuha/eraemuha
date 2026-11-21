@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <style>
     body,
     h1,
@@ -50,17 +49,17 @@
     }
 
     .bgimg-1 {
-      background-image: url('/w3images/parallax1.jpg');
+      background-image: url('img/hero/4.jpg');
       min-height: 100%;
     }
 
     .bgimg-2 {
-      background-image: url('/w3images/parallax2.jpg');
+      background-image: url('img/hero/2.png');
       min-height: 400px;
     }
 
     .bgimg-3 {
-      background-image: url('/w3images/parallax3.jpg');
+      background-image: url('img/hero/8.jpg');
       min-height: 400px;
     }
 
@@ -90,313 +89,238 @@
   <!-- Navigation -->
   <div class="w3-top">
     <nav class="w3-flex" id="myNavbar">
-
       <a href="#home" class="w3-button">HOME</a>
-
       <a href="#about" class="w3-button w3-hide-small">
         <i class="fa fa-user"></i> ABOUT
       </a>
-
       <a href="#portfolio" class="w3-button w3-hide-small">
         <i class="fa fa-th"></i> PORTFOLIO
       </a>
-
       <a href="#contact" class="w3-button w3-hide-small">
         <i class="fa fa-envelope"></i> CONTACT
       </a>
-
       <a href="#" class="w3-button w3-hide-small w3-hover-red" style="margin-left:auto">
         <i class="fa fa-search"></i>
       </a>
-
       <button class="w3-button w3-hide-medium w3-hide-large" style="margin-left:auto" onclick="toggleFunction()"
         title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </button>
-
     </nav>
-
     <!-- Navigation on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-
       <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-
       <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-
       <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-
       <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-
     </div>
   </div>
-
   <!-- First Parallax Image -->
   <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-
     <div class="w3-display-middle" style="white-space:nowrap">
       <span class="w3-center w3-padding-large w3-black
     w3-xlarge w3-wide w3-animate-opacity">
-        MY <span class="w3-hide-small">WEBSITE</span> LOGO
+        <span class="w3-hide-small">ERAMUHA</span>
       </span>
     </div>
-
   </div>
-
   <!-- About -->
   <section class="w3-content w3-container w3-padding-64" id="about">
-
-    <h3 class="w3-center">ABOUT ME</h3>
-
+    <h3 class="w3-center">ABOUT</h3>
     <p class="w3-center">
-      <em>I love photography</em>
+      <em>Tech | Dev | Business | Finance | Building Innovation with Code, AI, Human Logic, Heart & Soul</em>
     </p>
-
     <p>
-      We have created a fictional "personal" website/blog, and our
-      fictional character is a hobby photographer. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur.
+      Founder, Entrepreneur, Developer and Tech Enthusiast, building ideas into ventures. My interests span
+      software development, AI, data, business, finance, e-commerce, logistics, science and innovation. I enjoy
+      exploring technology, creating solutions and turning curiosity into action. Beyond business, I am passionate about
+      music, movies, videogames and travel. A curious mind, lifelong learner, and explorer of ideas and worlds.
     </p>
-
     <div class="w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px">
-
-      <div class="w3-center w3-padding-large">
-
+      <div class="w3-center w3-padding-large" id="profile">
         <p>
           <b>
             <i class="fa fa-user w3-margin-right"></i>
-            My Name
+            Profile
           </b>
         </p>
-
-        <img src="/w3images/avatar_hat.jpg" class="w3-round w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+        <img src="img/profile/7.jpg" class="w3-round w3-opacity w3-hover-opacity-off" alt="Profile Image"
           style="width:100%;max-width:500px">
-
       </div>
-
-      <div class="w3-padding-large">
-
+      <div class="w3-center w3-padding-large" id="description">
         <p>
-          Welcome to my website. I am lorem ipsum consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur.
+          <b>
+            <i class="fa fa-info w3-margin-right"></i>
+            Description
+          </b>
         </p>
-
+        <p>
+          Technology | Development | Business | Innovation | Finance | Entrepreneurship | Startups | Leadership |
+          Management | Strategy | Marketing | Sales
+        </p>
+        <p>
+          Passionate about Science, Tech, AI, Business, E-Commerce, Logistics, Economy, Finance, Music, Movies,
+          Videogames and Travel.
+        </p>
+        <p>
+          Curious Mind | Lifelong Learner | Explorer of Ideas and Worlds.
+        </p>
+        <button class="w3-button w3-black w3-round-large">
+          <i class="fa fa-file-pdf-o"></i> CV
+        </button>
+        <button class="w3-button w3-black w3-round-large">
+          <i class="fa fa-rss"></i> Blog
+        </button>
+        <button class="w3-button w3-black w3-round-large">
+          <i class="fa fa-images"></i> Gallery
+        </button>
       </div>
-
     </div>
-
     <p class="w3-large w3-center w3-padding-16">
-      I'm really good at:
+      Knowledge & Skills:
     </p>
-
     <p class="w3-wide">
-      <i class="fa fa-camera"></i> Photography
+      <i class="fa fa-code"></i>Technology | Development | Programming | AI | Data</i>
     </p>
-
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
     </div>
-
+    <br>
     <p class="w3-wide">
-      <i class="fa fa-laptop"></i> Web Design
+      <i class="fa fa-laptop"></i>Business | Innovation | Entrepreneurship | Startups | Leadership | Management |
+      Strategy | Marketing | Sales</i>
     </p>
-
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
     </div>
-
+    <br>
     <p class="w3-wide">
-      <i class="fa fa-photo"></i> Photoshop
+      <i class="fa fa-money"></i>Finance | Economy | Science | E-Commerce | Logistics | Music | Movies | Videogames |
+      Travel</i>
     </p>
-
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
     </div>
-
   </section>
-
   <!-- Statistics -->
   <div class="w3-grid w3-center w3-dark-grey w3-padding-16"
     style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
-
     <div class="w3-section">
-      <span class="w3-xlarge">14+</span><br>
-      Partners
+      <span class="w3-xlarge">3+</span><br>
+      Platforms
     </div>
-
     <div class="w3-section">
-      <span class="w3-xlarge">55+</span><br>
-      Projects Done
+      <span class="w3-xlarge">7+</span><br>
+      Projects
     </div>
-
     <div class="w3-section">
-      <span class="w3-xlarge">89+</span><br>
-      Happy Clients
+      <span class="w3-xlarge">10+</span><br>
+      Ideas
     </div>
-
     <div class="w3-section">
-      <span class="w3-xlarge">150+</span><br>
-      Meetings
+      <span class="w3-xlarge">1</span><br>
+      Store
     </div>
-
   </div>
-
   <!-- Second Parallax Image -->
   <div class="bgimg-2 w3-display-container w3-opacity-min">
-
     <div class="w3-display-middle">
       <span class="w3-xxlarge w3-text-white w3-wide">
         PORTFOLIO
       </span>
     </div>
-
   </div>
-
   <!-- Portfolio -->
   <section class="w3-content w3-container w3-padding-64" id="portfolio">
-
-    <h3 class="w3-center">MY WORK</h3>
-
+    <h3 class="w3-center">PORTFOLIO</h3>
     <p class="w3-center">
       <em>
-        Here are some of my latest work.<br>
-        Click on the images to make them bigger.
+        Check out my portfolio of projects, ideas and ventures.
       </em>
     </p>
-
     <div class="w3-grid w3-padding-32" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px">
-
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-        alt="The mist over the mountains">
-
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-        alt="Coffee beans">
-
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-        alt="Bear closeup">
-
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-        alt="My beloved typewriter">
-
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-        alt="Empty ghost train">
-
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-
+      <img src="img/portfolio/platform.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Platform">
+      <img src="img/portfolio/projects.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Projects">
+      <img src="img/portfolio/store.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Store">
     </div>
-
+    <div class="w3-grid w3-padding-32" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px">
+      <img src="img/portfolio/eraverse.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Eraverse">
+      <img src="img/portfolio/exoverse.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Exoverse">
+      <img src="img/portfolio/emuverse.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Emuverse">
+    </div>
     <p class="w3-center">
       <button class="w3-button w3-padding-large w3-light-grey">
-        LOAD MORE
+        VIEW ALL
       </button>
     </p>
-
   </section>
-
   <!-- Image Modal -->
   <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-
     <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
       ×
     </span>
-
-    <div class="w3-modal-content w3-animate-zoom
-w3-center w3-transparent w3-padding-64">
-
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image" alt="Selected portfolio image">
-
       <p id="caption" class="w3-opacity w3-large"></p>
-
     </div>
   </div>
-
   <!-- Third Parallax Image -->
   <div class="bgimg-3 w3-display-container w3-opacity-min">
-
     <div class="w3-display-middle">
       <span class="w3-xxlarge w3-text-white w3-wide">
         CONTACT
       </span>
     </div>
-
   </div>
-
   <!-- Contact -->
   <section class="w3-content w3-container w3-padding-64" id="contact">
-
-    <h3 class="w3-center">WHERE I WORK</h3>
-
+    <h3 class="w3-center">CONTACT</h3>
     <p class="w3-center">
-      <em>I'd love your feedback!</em>
+      <em>Get in touch!</em>
     </p>
-
     <div class="w3-grid w3-padding-32" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px">
-
       <div>
-        <img src="/w3images/map.jpg" class="w3-round" style="width:100%" alt="Map of Chicago">
+        <img src="img/logo/logo.png" class="w3-round" style="width:100%" alt="Logo">
       </div>
-
       <div>
-
         <div class="w3-large w3-margin-bottom">
           <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
-          Chicago, US<br>
-
-          <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
-          Phone: +00 151515<br>
-
+          Milano, Italy<br>
+          <i class="fa fa-whatsapp fa-fw w3-xlarge w3-margin-right"></i>
+          WhatsApp: +39 320 3326955<br>
           <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
-          Email: mail@mail.com
+          Email: eraemuha@eramuha.com
         </div>
-
         <p>
-          Swing by for a cup of <i class="fa fa-coffee"></i>,
-          or leave me a note:
+          Send me a message:
         </p>
-
         <form action="/action_page.php" target="_blank">
-
           <div class="w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px">
-
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-
             <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
-
           </div>
-
+          <br>
           <p>
             <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
           </p>
-
           <button class="w3-button w3-black w3-right" type="submit">SEND MESSAGE</button>
-
         </form>
-
       </div>
     </div>
-
   </section>
-
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64
 w3-opacity w3-hover-opacity-off">
-
     <a href="#home" class="w3-button w3-light-grey">
       <i class="fa fa-arrow-up w3-margin-right"></i>
       To the top
     </a>
-
     <div class="w3-xlarge w3-section">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
       <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -405,16 +329,14 @@ w3-opacity w3-hover-opacity-off">
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
-
     <p>
       Powered by
-      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-        class="w3-hover-text-green">w3.css</a>
+      <a href="https://www.eramuha.com" title="Eramuha" target="_blank"
+        class="w3-hover-text-green">Eramuha</a>
     </p>
-
   </footer>
   <!-- End your project here-->
-
+   
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.umd.min.js"></script>
   <!-- Custom scripts -->
