@@ -330,6 +330,17 @@
             <a href="https://www.eramuha.com" title="Eramuha" target="_blank" class="w3-hover-text-green">Eramuha</a>
         </p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.w3-teal').forEach(link => {
+            link.classList.remove('w3-teal');
+            link.classList.add('w3-blue');
+        });
+        document.querySelectorAll('.w3-text-teal').forEach(link => {
+            link.classList.remove('w3-text-teal');
+            link.classList.add('w3-text-blue');
+        });
+    </script>
 </body>
 
 </html>
