@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Eraemuha - Home</title>
-  <!-- MDB icon -->
+  <!-- Favicon -->
   <link rel="icon" href="img/icon/icon.png" type="image/x-icon" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -73,7 +73,6 @@
 
     /* Turn off parallax scrolling on tablets and phones */
     @media only screen and (max-device-width:1600px) {
-
       .bgimg-1,
       .bgimg-2,
       .bgimg-3 {
@@ -165,15 +164,9 @@
         <p>
           Curious Mind | Lifelong Learner | Explorer of Ideas and Worlds.
         </p>
-        <button class="w3-button w3-black w3-round-large">
-          <i class="fa fa-file-pdf-o"></i> CV
-        </button>
-        <button class="w3-button w3-black w3-round-large">
-          <i class="fa fa-rss"></i> Blog
-        </button>
-        <button class="w3-button w3-black w3-round-large">
-          <i class="fa fa-images"></i> Gallery
-        </button>
+        <a class="w3-button w3-black w3-round-large" href="cv.html" target="_blank">CV</a>
+        <a class="w3-button w3-black w3-round-large" href="blog.html" target="_blank">Blog</a>
+        <a class="w3-button w3-black w3-round-large" href="gallery.html" target="_blank">Gallery</a>
       </div>
     </div>
     <p class="w3-large w3-center w3-padding-16">
@@ -183,7 +176,7 @@
       <i class="fa fa-code"></i>Technology | Development | Programming | AI | Data</i>
     </p>
     <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
     </div>
     <br>
     <p class="w3-wide">
@@ -191,7 +184,7 @@
       Strategy | Marketing | Sales</i>
     </p>
     <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
     </div>
     <br>
     <p class="w3-wide">
@@ -199,7 +192,7 @@
       Travel</i>
     </p>
     <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
     </div>
   </section>
   <!-- Statistics -->
@@ -255,15 +248,15 @@
         alt="Emuverse">
     </div>
     <p class="w3-center">
-      <button class="w3-button w3-padding-large w3-light-grey">
-        VIEW ALL
-      </button>
+      <a href="https://portfolio.eramuha.com" target="_blank" class="w3-button w3-padding-large w3-light-grey">
+        <i class="fa fa-eye"></i> VIEW ALL
+      </a>
     </p>
   </section>
   <!-- Image Modal -->
   <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
     <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
-      ×
+      <i class="fa fa-times"></i>
     </span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image" alt="Selected portfolio image">
@@ -291,16 +284,21 @@
       <div>
         <div class="w3-large w3-margin-bottom">
           <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
-          Milano, Italy<br>
+          Milano, Italy
+          <br>
+          <!-- 
           <i class="fa fa-whatsapp fa-fw w3-xlarge w3-margin-right"></i>
-          WhatsApp: +39 320 3326955<br>
+          WhatsApp: +39<br>
+          -->
           <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
-          Email: eraemuha@eramuha.com
+          Email: <a href="mailto:eraemuha@eramuha.com">eraemuha@eramuha.com</a>
         </div>
+
+        <!-- 
         <p>
           Send me a message:
         </p>
-        <form action="/action_page.php" target="_blank">
+        <form action="" target="_blank">
           <div class="w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
             <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
@@ -309,34 +307,42 @@
           <p>
             <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
           </p>
-          <button class="w3-button w3-black w3-right" type="submit">SEND MESSAGE</button>
+          <button class="w3-button w3-black w3-right" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
         </form>
+        -->
+
       </div>
     </div>
   </section>
   <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64
-w3-opacity w3-hover-opacity-off">
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
     <a href="#home" class="w3-button w3-light-grey">
       <i class="fa fa-arrow-up w3-margin-right"></i>
       To the top
     </a>
     <div class="w3-xlarge w3-section">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <a class="fa fa-twitter w3-hover-opacity" href="https://x.com/era_emuha" target="_blank"></a>
+      <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/em-emuha/" target="_blank"></a>
+      <a class="fa fa-github w3-hover-opacity" href="https://eraemuha.github.io/eraemuha/" target="_blank"></a>
+      <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/era_emuha/" target="_blank"></a>
+      <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/era.emuha/" target="_blank"></a>
+      <a class="fa fa-youtube w3-hover-opacity" href="https://www.youtube.com/@era_emuha" target="_blank"></a>
+      <a class="fa fa-tiktok w3-hover-opacity" href="https://www.tiktok.com/@era_emuha" target="_blank"></a>
+      <a class="fa fa-twitch w3-hover-opacity" href="https://www.twitch.tv/eramx0" target="_blank"></a>
+      <a class="fa fa-reddit w3-hover-opacity" href="https://www.reddit.com/user/era_emuha/" target="_blank"></a>
+      <a class="fa fa-pinterest-p w3-hover-opacity" href="https://www.pinterest.com/era_emuha/" target="_blank"></a>
+      <a class="fa fa-tumblr w3-hover-opacity" href="https://www.tumblr.com/blog/era-emuha" target="_blank"></a>
+      <a class="fa fa-snapchat w3-hover-opacity" href="https://www.snapchat.com/eramuha" target="_blank"></a>
     </div>
     <p>
       Powered by
-      <a href="https://www.eramuha.com" title="Eramuha" target="_blank"
-        class="w3-hover-text-green">Eramuha</a>
+      <a href="https://www.eramuha.com" title="Eramuha" target="_blank" class="w3-hover-text-green">Eramuha</a>
     </p>
   </footer>
   <!-- End your project here-->
-   
+
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.umd.min.js"></script>
   <!-- Custom scripts -->

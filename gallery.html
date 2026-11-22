@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Favicon -->
+<link rel="icon" href="img/icon/icon.png" type="image/x-icon" />
+<!-- W3.CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .gallery {
+        column-count: 3;
+        column-gap: 0;
+    }
+
+    .gallery img {
+        display: block;
+        width: 100%;
+    }
+
+    .gallery-padding {
+        column-gap: 12px;
+    }
+
+    .gallery-padding img {
+        margin-bottom: 12px;
+    }
+
+    @media (max-width:600px) {
+        .gallery {
+            column-count: 1;
+        }
+    }
+</style>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <button onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright"
+            style="padding:6px 24px">
+            ï¿½ </button>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <main class="w3-content" style="max-width:1500px">
+        <!-- Header -->
+        <div class="w3-opacity">
+            <div class="w3-flex" style="justify-content:flex-end">
+                <button class="w3-button w3-xxlarge w3-white" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <header class="w3-center w3-margin-bottom">
+                ```
+                <h1><b>PHOTOLIO</b></h1>
+                <p>
+                    <b>A template made by w3.css for photographers.</b>
+                </p>
+                <p class="w3-padding-16">
+                    <button class="w3-button w3-black" onclick="togglePadding()">
+                        Toggle Grid Padding
+                    </button>
+                </p>
+                ```
+            </header>
+        </div>
+        <!-- Photo Gallery -->
+        <div class="gallery" id="myGallery" style="margin-bottom:128px">
+            <img src="/w3images/rocks.jpg" alt="Rocks" width="500" height="850">
+            <img src="/w3images/sound.jpg" alt="Sound" width="1100" height="500">
+            <img src="/w3images/woods.jpg" alt="Woods" width="700" height="220">
+            <img src="/w3images/rock.jpg" alt="Rock" width="300" height="300">
+            <img src="/w3images/nature.jpg" alt="Nature" width="600" height="400">
+            <img src="/w3images/mist.jpg" alt="Mist" width="1500" height="380">
+            <img src="/w3images/coffee.jpg" alt="Coffee" width="1100" height="500">
+            <img src="/w3images/bridge.jpg" alt="Bridge" width="700" height="220">
+            <img src="/w3images/notebook.jpg" alt="Notebook" width="548" height="365">
+            <img src="/w3images/london.jpg" alt="London" width="382" height="260">
+            <img src="/w3images/rocks.jpg" alt="Rocks" width="500" height="850">
+            <img src="/w3images/avatar_g.jpg" alt="Portrait" width="400" height="250">
+            <img src="/w3images/mist.jpg" alt="Mist" width="1500" height="380">
+            <img src="/w3images/workbench.jpg" alt="Workbench" width="1100" height="500">
+            <img src="/w3images/gondol.jpg" alt="Gondola" width="300" height="300">
+            <img src="/w3images/skies.jpg" alt="Sky" width="300" height="300">
+            <img src="/w3images/lights.jpg" alt="Lights" width="600" height="400">
+            <img src="/w3images/workshop.jpg" alt="Workshop" width="300" height="300">
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i> <i class="fa fa-instagram w3-hover-opacity"></i> <i
+            class="fa fa-snapchat w3-hover-opacity"></i> <i class="fa fa-pinterest-p w3-hover-opacity"></i> <i
+            class="fa fa-twitter w3-hover-opacity"></i> <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">
+            Powered by
+            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+        </p>
+    </footer>
+    <script>
+        // Toggle gallery padding
+        function togglePadding() {
+            document.getElementById("myGallery").classList.toggle("gallery-padding");
+        }
+
+        // Open sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        // Close sidebar
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
